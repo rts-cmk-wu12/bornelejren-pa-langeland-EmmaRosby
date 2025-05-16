@@ -32,6 +32,9 @@ Projektet inkluderer en Express-backend, der kommunikerer med en MongoDB-databas
 - `POST /api/sponsers`: Til registrering af nye sponsorer
 - `GET /api/sponsers`: Til hentning af eksisterende sponsorer
 
+## Start op
+- Åben en ny terminal og kør: npm run dev:express.
+- Åben en ny terminal og kør: npm run dev.
 
 ## Konklusion
 Projektet har resulteret i en moderne, responsiv hjemmeside, der præsenterer Børnelejrens formål og tilbyder en nem måde for virksomheder at støtte foreningens arbejde. Hjemmesiden følger det godkendte design og opfylder alle funktionelle krav.
