@@ -1,0 +1,95 @@
+@use '../base/variables.scss';
+
+.sponser{
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 1em; 
+        padding: 1em;
+        background-color: variables.$white;
+        align-items: center;
+        position: relative;;
+
+        &__success{
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+
+            background-color: variables.$primary-color;
+            color: variables.$white;
+            font-size: 2em;
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 40vw;
+            height: 30vh;
+
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 80%;
+
+            label{
+                font-size: 1.2em;
+                color: variables.$black;
+            }
+            input, select{
+                padding: 0.5em;
+                border: 2px solid variables.$primary-color;
+                background-color: variables.$gray;
+                font-size: 1.2em;
+            }
+        }
+        &__submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            button{
+                padding: 1em 6em;
+                background-color: variables.$primary-color;
+                color: variables.$white;
+                font-size: 1.2em;
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    background-color: variables.$black;
+                    color: variables.$white;
+                }
+            }
+           
+          
+        }
+    }
+}
+
+.error-message{
+    color: variables.$primary-color;
+}
+
+
+
+input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+/* Target Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

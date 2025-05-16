@@ -1,0 +1,16 @@
+@use './base/variables.scss' as *;
+@use './base/reset.scss' as *;
+
+@use './components/header.scss' as *;
+@use './components/hero.scss' as *;
+@use './components/footer.scss' as *;
+@use './components/burger-menu.scss' as *;
+@use './components/sponserForm.scss' as *;
+
+@use './themes/fonts.scss' as *;
+
+
+@use './pages/index.scss' as *;
+@use './pages/about.scss' as *;
+@use './pages/sponser.scss' as *;
+@use './pages/thanks.scss' as *;
