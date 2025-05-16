@@ -232,7 +232,7 @@ function SponserForm() {
                     {errors.amount && <span className="error-message">{errors.amount}</span>}
                 </div>
                 <div className="sponser__form__submit">
-                    <button type="submit" className="submit-button">Doner</button>
+                    <button type="submit" className="submit-button">Donér</button>
                 </div>
             </form>
         </>
