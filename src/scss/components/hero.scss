@@ -35,6 +35,9 @@
         font-weight: 900;
         text-align: center;
         z-index: 1;
+        img{
+            height: 2em;
+        }
     }
 }
 
@@ -45,7 +48,12 @@
             height: 30vh;
         }
         h2{
+            display: flex;
+            flex-direction: column;
             font-size: 2em;
+            img{
+                height: 1.5em;
+            }
         }
     }
 }

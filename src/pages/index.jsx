@@ -9,7 +9,7 @@ function HomePage() {
         <>
         <Header />
         <main>
-            <Hero heading="VELKOMMEN"/>
+        <Hero heading={<>VELKOMMEN TIL <img src="src/assets/Logo_white.svg" alt="Logo" /></>} />
             
             <div className="welcome">
                 <div className="welcome__text">
