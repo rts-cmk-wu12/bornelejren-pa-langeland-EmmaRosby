@@ -1,0 +1,85 @@
+@use '../base/variables.scss';
+
+// ____________________________ RESPOONSIVE DESKTOP ____________________________ //
+.burgermenu{
+    display: none;
+    
+    &__button{
+        display: none;
+    }
+}
+
+// ____________________________ RESPOONSIVE MOBILE ____________________________ //
+@media (max-width: 1110px){
+    .burgermenu{
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: variables.$primary-color;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: transform 200ms ease-out, visibility 200ms ease-out;
+        z-index: 2;
+        
+        &.visible {
+            transform: translateX(0%);
+            visibility: visible;
+        }
+        
+        &.hidden {
+            transform: translateX(100%); 
+            visibility: hidden;
+        }
+        &__button{
+            display: flex;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: white;
+
+            .close{
+                display: flex;
+                position: absolute;
+                top: .5em;
+                right: .5em;
+            }
+            .open{
+                display: flex;
+                position: absolute;
+                top: .5em;
+                right: 0;
+            }
+        }
+    
+        &__burgerNavigation{
+            display: flex;
+            align-items: center;
+            height: 100vh; 
+            width: 100vw;
+
+            ul{
+                width: 100%;
+                height: auto; 
+                display: flex; 
+                flex-direction: column; 
+                text-align: center;
+                 
+                list-style: none;
+                
+                li {
+                    margin: 1rem 0;
+                    a{
+                        color: variables.$white;
+                        text-decoration: none;
+                        font-weight: 900;           
+                        font-size: 3em;
+
+                    }
+                }
+            }
+        }
+    }
+}

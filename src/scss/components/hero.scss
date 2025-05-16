@@ -1,0 +1,59 @@
+@use "../base/variables.scss";
+
+.hero{
+    position: relative;
+
+    &__imageContainer{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 60%; 
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.586);
+        }
+    }
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: variables.$white;
+        font-size: 4em;
+        font-weight: 900;
+        text-align: center;
+        z-index: 1;
+        img{
+            height: 2em;
+        }
+    }
+}
+
+// ____________________________ RESPOONSIVE MOBILE ____________________________ //
+@media (max-width: 1110px){
+    .hero{
+        &__imageContainer{
+            height: 30vh;
+        }
+        h2{
+            display: flex;
+            flex-direction: column;
+            font-size: 2em;
+            img{
+                height: 1.5em;
+            }
+        }
+    }
+}

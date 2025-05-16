@@ -1,0 +1,13 @@
+@use "../base/variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    background-color: variables.$primary-color;
+    overflow-x: hidden;  //cant swipe left and right
+}

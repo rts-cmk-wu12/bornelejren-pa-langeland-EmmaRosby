@@ -1,0 +1,73 @@
+@use "../base/variables.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 4rem;
+    h1{
+        font-size: 1.5em;
+        color: variables.$white;
+        font-weight: 900;
+        cursor: default;
+        margin-left: 2rem;
+    }
+    img{
+        position: absolute;
+        top: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+.navigation{
+    margin-right: 2em;
+    ul{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+
+        li a{
+
+            text-decoration: none;
+            color: variables.$white;
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+        li a:hover{
+            color: variables.$black;
+            transition: all 0.2s ease-in-out;
+            text-decoration: underline;
+        }
+        
+    }
+    
+}
+
+
+
+// ____________________________ RESPOONSIVE ____________________________ //
+
+//burger menu
+
+
+
+
+@media (max-width: 1110px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 1rem;
+        height: 4rem;
+        h1{
+            display: none;
+        }
+    }
+    .navigation{
+        display: none;
+    }
+}
+

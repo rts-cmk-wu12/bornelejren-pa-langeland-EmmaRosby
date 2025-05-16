@@ -1,0 +1,17 @@
+@use '../base/variables.scss';
+
+.sponser{
+
+    &__content{
+        background-color: variables.$white;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2em;
+        margin-block: 1em;
+        font-size: 1.2em;
+    }
+
+
+}
+
