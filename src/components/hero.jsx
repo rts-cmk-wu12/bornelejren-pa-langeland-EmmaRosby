@@ -3,7 +3,7 @@ function Hero({heading = "Text"}) {
         <>
         <section className="hero">
             <div className="hero__imageContainer">
-                <img src="src/assets/img/seven.jpg" alt="" />
+                <img src="img/seven.jpg" alt="" />
             </div>
             <h2>{heading}</h2>
         </section>

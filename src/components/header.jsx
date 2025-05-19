@@ -7,7 +7,7 @@ function Header() {
         <>
             <header className="header">
                 <h1>BØRNELEJREN PÅ LANGELAND</h1>
-                <img src="src/assets/logo.svg" alt="" />
+                <img src="/logo.svg" alt="" />
                 <Navigation />
                 <PrimaryMenu />
             </header>

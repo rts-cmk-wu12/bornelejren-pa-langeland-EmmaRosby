@@ -42,7 +42,7 @@ function ThanksPage() {
                 <div className="thanks">
                     <div>
                         <p>Børnelejren på Langeland takker alle, der på den ene eller anden måde, har støttet foreningens arbejde med at sende dårligt stillede børn på et ophold på Søgård Hovedgård - det være sig ved naturaliesponsorater eller økonomisk støtte fra støttemedlemmer, virksomhedssponsorer og donationer fra fonde</p>
-                        <img src="src/assets/img/eight.png" alt="" />
+                        <img src="img/eight.png" alt="" />
                     </div>
                     <div className="thanks__sponsors">
                         <h3>En særligt tak til</h3>
