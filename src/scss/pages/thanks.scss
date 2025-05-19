@@ -1,0 +1,52 @@
+@use '../base/variables.scss';
+
+.thanks{
+    div{
+        background-color: variables.$white;
+        margin-block: 1em;
+        display: flex;
+        p{
+            padding: 1em;
+            width: 50%;
+            font-size: 1.2em;
+        }
+        img{
+            overflow: hidden;
+            width: 50%;
+            object-fit: cover;
+        }
+    }
+
+   &__sponsors{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 1em;
+        &__container{
+            border-bottom: solid 4px variables.$primary-color;
+
+            p{
+                font-size: 1.2em;
+                color: variables.$black;
+                font-weight: 600;
+            }
+            
+        }
+   }
+}
+
+// ____________________________ RESPOONSIVE MOBILE ____________________________ //
+@media (max-width: 1110px){
+    .thanks{
+        div{
+            flex-direction: column;
+            p{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
