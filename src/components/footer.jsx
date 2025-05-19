@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className="footer__container__logo">
                     <p>Foreningen Børnelejren på Langeland</p>
-                    <img src="src/assets/logo.svg" alt="" />
+                    <img src="./logo.svg" alt="" />
                 </div>
             </div>
         </footer>

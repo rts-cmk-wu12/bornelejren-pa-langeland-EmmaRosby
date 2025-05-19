@@ -9,7 +9,7 @@ function HomePage() {
         <>
         <Header />
         <main>
-        <Hero heading={<>VELKOMMEN TIL <img src="src/assets/Logo_white.svg" alt="Logo" /></>} />
+        <Hero heading={<>VELKOMMEN TIL <img src="/Logo_white.svg" alt="Logo" /></>} />
             
             <div className="welcome">
                 <div className="welcome__text">
@@ -43,7 +43,7 @@ function HomePage() {
                         <button><Link to="/sponser">Tildmeld dig som sponser!</Link></button>
                     </div>      
                 </div>
-                <img src="src/assets/img/one.jpg" alt="" className="welcome__img"/>
+                <img src="img/one.jpg" alt="" className="welcome__img"/>
             </div>
         </main>
         <Footer />
