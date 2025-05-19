@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   const allowedOrigins = [
-    "liveside-link",
+    "https://bornelejren-pa-langeland-emmarosby.onrender.com",
     "http://localhost:5173"
   ];
   const origin = req.headers.origin;
